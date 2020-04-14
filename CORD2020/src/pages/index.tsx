@@ -23,7 +23,7 @@ export default () => {
           placeholder="Ask your question here!"
           enterButton="Search"
           size="large"
-          onSearch={value => console.log(value)}
+          onSearch={(value: any) => console.log(value)}
         />
       </div>
     </div>

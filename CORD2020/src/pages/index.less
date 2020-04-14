@@ -1,0 +1,22 @@
+/* define color scheme here */
+@schemeYellow: '#F8E9A1';
+@schemeRed: '#F76C6C';
+@schemeLightBlue: '#A8D0E6';
+@schemeBlue: '#374785';
+@schemeDarkBlue: '#24305E';
+
+.empty-search-bar-page {
+  .title-cover {
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 1)),
+      to(rgba(0, 0, 0, 0))
+    );
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+  .title-box {
+    margin: 0 20vw;
+  }
+}

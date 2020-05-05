@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.less';
-
 import { Input } from 'antd';
+import { history } from 'umi';
 
 import titleCover from '../assets/title-cover.png';
 
@@ -23,7 +23,9 @@ export default () => {
           placeholder="Ask your question here!"
           enterButton="Search"
           size="large"
-          onSearch={(value: any) => console.log(value)}
+          onSearch={(value: any) =>
+            history.push(`/answer?q=${value.replace(' ', '%')}&s=0&e=4`)
+          }
         />
       </div>
     </div>
